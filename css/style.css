@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     --color: #0DA2BD
+    /* box-sizing: border-box; */
 }
 /* Header start */
 header {
@@ -16,15 +17,16 @@ header {
     padding: 0 10px;
     z-index: 100;
     box-shadow: 0 1px 5px;
+    
 }
 .header-left {
-    width: 15%;
+    width: 30%;
 }
 .header-left h1 span{
     color: var(--color);
 }
 .header-center {
-    width: 80%;
+    width: 40%;
     display: flex;
     justify-content: center;
     font-size: 17px;
@@ -37,7 +39,7 @@ header {
     margin: 0 20px;
 }
 .header-right {
-    width: 15%;
+    width: 30%;
     justify-content: end;
     display: flex;
 }
@@ -92,6 +94,10 @@ header {
 .home-button i {
     color: var(--color);
 }
+.home-watch:hover {
+    cursor: pointer;
+    color: var(--color);
+}
 /* Home end */
 
 /* Four Box */
@@ -121,7 +127,7 @@ header {
     transition: transform ease-in-out 0.5s;
 }
 .four-box-1:hover {
-    box-shadow: 0px 0 60px 0 rgb(180, 175, 175);
+    box-shadow: 0px 0 60px 0 rgba(72, 86, 100,0.1);
     transform: translateY(-10px);
 }
 .four-box-1 * {
@@ -395,7 +401,7 @@ header {
 }
 .getintouch-left {
     width: 30%;
-    box-shadow: 0px 0 10px 0 rgb(180, 175, 175);
+    box-shadow: 0px 0 10px 0 rgba(180, 175, 175,0.5);
 }
 .getintouch-left-box {
     padding: 40px;
@@ -439,6 +445,7 @@ header {
 }
 .sent-message {
     margin-left: 60%;
+    padding-bottom: 25px;
 }
 .sent-message button {
     width: 150px;
@@ -453,6 +460,10 @@ header {
     color: var(--color);
 }
 /* Footer Start */
+footer {
+    color: white;
+    font-size: 12px;
+}
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -474,23 +485,62 @@ header {
     content: '>';
     padding-right: 5px;
 }
+.useful-links div {
+    padding: 3px 0;
+    color: #C9CDD1;
+}
+.useful-links div:hover {
+    color: white;
+    cursor: pointer;
+}
+.newsletter div {
+    display: flex;
+    margin: 30px 0px;
+}
+.newsletter div input {
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border: none;
+    width: 300px;
+}
+.newsletter div button {
+    width: 150px;
+    height: 40px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    border: none;
+    background-color: var(--color);
+    color: white;
+    font-size: 17px;
+}
 .footer-bottom {
     background-color: #3A4753;
     padding: 0 15%;
     height: 100px;
-}
-.useful-links div {
-    padding: 3px 0;
-}
-.newsletter {
-
-}
-.newsletter div {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.footer-bottom strong {
+    font-weight: 900;
+}
+.footer-bottom span {
+    color: var(--color);
+}
+.footer-social {
 
-
-
-
+}
+.footer-social i {
+    background-color: #4E5A65;
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer-social i:hover {
+    background-color: var(--color);
+}
+button:hover {
+    cursor: pointer;
+    background-color: #3BAEC5;
+}
 
 
