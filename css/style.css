@@ -5,6 +5,19 @@
     /* box-sizing: border-box; */
 }
 /* Header start */
+.to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--color);
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 header {
     position: fixed;
     top: 0;
@@ -51,6 +64,9 @@ header {
     background-color: var(--color);
     color: white;
     font-size: 17px;
+}
+.sidebar {
+    display: none;
 }
 /* Header end */
 
@@ -527,9 +543,6 @@ footer {
 .footer-bottom span {
     color: var(--color);
 }
-.footer-social {
-
-}
 .footer-social i {
     background-color: #4E5A65;
     padding: 10px;
@@ -543,4 +556,206 @@ button:hover {
     background-color: #3BAEC5;
 }
 
+/* End of Desktop Size */
 
+@media (max-width: 480px)  {
+    .to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 80px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 100;
+        box-shadow: 0 1px 5px;
+        justify-content: space-between;
+    }
+    .header-left {
+        width: 35%;
+    }
+    .header-left h1 span{
+        color: var(--color);
+    }
+    .header-center {
+        display: none;
+    }
+    .header-right {
+        width: 35%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header-right button {
+        width: 150px;
+        height: 40px;
+        border-radius: 7px;
+        border: none;
+        background-color: var(--color);
+        color: white;
+        font-size: 17px;
+    }
+    header nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        padding: 12px;
+        box-shadow: 0 1px 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+    header nav ul {
+        list-style: none;
+    }
+    header nav li {
+        background-color: var(--color);
+        border-radius: 7px;
+    }
+    header nav ul a {
+        text-decoration: none;
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+        color: white;
+        
+    }
+    .side-bar label {
+        background-color: var(--color);
+        height: 40px;
+        width: 40px;
+        border-radius: 7px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #check {
+        display: none;
+    }
+    #check:checked ~ nav {
+        display: block;
+    }
+    .home {
+        display: none;
+    }
+    .four-box {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .about-split {
+        display: none;
+    }
+    .about-image-scroll {
+        display: none;
+    }
+    .call-to-action {
+        display: none;
+    }
+    .services {
+        display: none;
+    }
+    .team-heading {
+        display: none;
+    }
+    .team-ul {
+        display: none;
+    }
+    .contact-us {
+        display: none;
+    }
+    .map {
+        display: none;
+    }
+    .getintouch {
+        display: none;
+    }
+    .sent-message {
+        display: none;
+    }
+    footer {
+        margin-top: 50vh;
+        color: white;
+        font-size: 12px;
+    }
+    .footer-top {
+        display: block;
+        background-color: #485664;
+    }
+    .footer-herobiz div {
+        padding: 10px 0;
+    }
+    .footer-top h4::after {
+        content: '';
+        background-color: var(--color);
+        height: 2px;
+        width: 25px;
+        display: block;
+        margin: 5px 0
+    }
+    .useful-links div::before {
+        content: '>';
+        padding-right: 5px;
+    }
+    .useful-links div {
+        padding: 3px 0;
+        color: #C9CDD1;
+    }
+    .useful-links div:hover {
+        color: white;
+        cursor: pointer;
+    }
+    .newsletter div {
+        display: flex;
+        margin: 30px 0px;
+    }
+    .newsletter div input {
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+        border: none;
+        width: 300px;
+    }
+    .newsletter div button {
+        width: 150px;
+        height: 40px;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 7px;
+        border: none;
+        background-color: var(--color);
+        color: white;
+        font-size: 17px;
+    }
+    .footer-bottom {
+        background-color: #3A4753;
+        padding: 0 15%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-bottom strong {
+        font-weight: 900;
+    }
+    .footer-bottom span {
+        color: var(--color);
+    }
+    .footer-social i {
+        background-color: #4E5A65;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .footer-social i:hover {
+        background-color: var(--color);
+    }
+  }
