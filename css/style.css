@@ -626,6 +626,9 @@ button:hover {
         color: white;
         
     }
+    .side-bar {
+        display: block;
+    }
     .side-bar label {
         background-color: var(--color);
         height: 40px;
